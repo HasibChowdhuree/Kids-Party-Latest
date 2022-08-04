@@ -269,7 +269,16 @@ a{
         margin-bottom: 50px;
     }
 }
-
+@media only screen and (max-width: 500px) {
+    #desktop-slider{
+        display: none !important;
+    }
+}
+@media only screen and (min-width: 500px) {
+    #mobile-slider{
+        display: none !important;
+    }
+}
 nav.navbar .navbar-nav .nav-item .btn-group {
     display: block;
     text-align: center;
