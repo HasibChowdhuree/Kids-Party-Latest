@@ -183,67 +183,69 @@
                         <div class="catagory_list">
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
-                                    value="option1" checked>
-                                <label class="form-check-label" for="exampleRadios1" style="color: blue;">
+                                    value="option1" onclick="party()" checked>
+                                <label class="form-check-label" for="exampleRadios1" onclick="party()">
                                     Party Packages
                                 </label>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
-                                    value="option1">
-                                <label class="form-check-label" for="exampleRadios1">
+                            <div class=" form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                                    value="option2" onclick="character()">
+                                <label class="form-check-label" for="exampleRadios2" onclick="character()">
                                     Character Packages
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
-                                    value="option1">
-                                <label class="form-check-label" for="exampleRadios1">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3"
+                                    value="option3" onclick="corporate()">
+                                <label class="form-check-label" for="exampleRadios3" onclick="corporate()">
                                     Corporate packages
                                 </label>
                             </div>
                         </div><br><br>
                         <div class="catagory_title text-center">Packages</div>
-                        <div class="catagory_list">
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="exampleRadiosX" id="exampleRadios1"
-                                    value="option1">
-                                <label class="form-check-label" for="exampleRadios1">
-                                    Face Painting and Temporary Tatto
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="exampleRadiosX" id="exampleRadios1"
-                                    value="option1">
-                                <label class="form-check-label" for="exampleRadios1">
-                                    Balloon Sculpting
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="exampleRadiosX" id="exampleRadios1"
-                                    value="option1">
-                                <label class="form-check-label" for="exampleRadios1">
-                                    Mascot Package
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="exampleRadiosX" id="exampleRadios1"
-                                    value="option1">
-                                <label class="form-check-label" for="exampleRadios1">
-                                    Henna Tattoo
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="exampleRadiosX" id="exampleRadios1"
-                                    value="option1" checked>
-                                <label class="form-check-label" for="exampleRadios1" style="color: blue;">
-                                    Jumping Castle
-                                </label>
-                            </div>
+                        <div class="catagory_list" id="catg_list">
+                            <ul>
+                                <li><a href="/face_painting.html">Face Painting & Temporary Tattoo</a></li>
+                                <li><a href="/balloon_sculpting.html">Balloon Sculpting</a></li>
+                                <li><a href="/henna_tattoo.html">Hanna Tattoo</a></li>
+                                <li><a href="/mascot_package.html">Mascot Package</a></li>
+                                <li><a href="/jumping_castle.html">Jumping Castle</a></li>
+                            </ul>
                         </div>
                         <div>
                             <button class="button-custom-small" type="button" id="form-btn">Submit</button>
                         </div>
+                        <script>
+                            function party() {
+                                document.getElementById('catg_list').innerHTML = `<ul>
+                                <li><a href="/face_painting.html">Face Painting & Temporary Tattoo</a></li>
+                                <li><a href="/balloon_sculpting.html">Balloon Sculpting</a></li>
+                                <li><a href="/henna_tattoo.html">Hanna Tattoo</a></li>
+                                <li><a href="/mascot_package.html">Mascot Package</a></li>
+                                <li><a href="/jumping_castle.html">Jumping Castle</a></li>
+                                </ul>`;
+                            }
+                            function character() {
+                                document.getElementById('catg_list').innerHTML = `<ul>
+                                <li><a href="/fairy_package.html">Fairy Package</a></li>
+                                <li><a href="/princess_package.html">Princess Package</a></li>
+                                <li><a href="/pirate_package.html">Pirate Package</a></li>
+                                <li><a href="/elsa_or_enna.html">Elsa or Anna</a></li>
+                                <li><a href="/elsa_and_enna.html">Elsa and Anna</a></li>
+                                <li><a href="/elsa_enna_olaf.html">Elsa, Anna and Olaf</a></li>
+                                <li><a href="/clown_package.html">Clown Package</a></li>
+                                <li><a href="/superhero_package.html">Superhero Package</a></li>
+                                <li><a href="/magician_package.html">Magician Package</a></li>
+                                </ul>`;
+                            }
+                            function corporate() {
+                                document.getElementById('catg_list').innerHTML = `<ul>
+                                <li><a href="/sports_events.html">Sports Events</a></li>
+                                <li><a href="/xmas_events.html">Xmas Events</a></li>
+                                </ul>`;
+                            }
+                        </script>
                     </form>
                 </div>
             </div>
