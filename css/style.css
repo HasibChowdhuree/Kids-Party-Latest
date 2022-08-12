@@ -190,6 +190,13 @@ footer{
     margin-bottom: 50px;
     text-transform: uppercase;
 }
+.page-title-black{
+    font-size: 36px;
+    color: black;
+    text-align: center;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
 .card{
     border: 0px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
