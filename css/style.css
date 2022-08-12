@@ -291,3 +291,6 @@ nav.navbar .navbar-nav .nav-item .btn-group a {
 nav.navbar .navbar-nav .nav-item .btn-group a:hover {
     color: var(--bs-nav-link-hover-color);
 }
+.text-card p{
+    font-size: 13px;
+}
