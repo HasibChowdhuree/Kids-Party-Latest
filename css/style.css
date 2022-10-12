@@ -249,7 +249,7 @@ a{
     color: black;
 }
 .btn:hover{
-    border: 0px white !important;
+    border-color: white !important;
 }
 .footer-right{
     text-align: end;
@@ -298,6 +298,6 @@ nav.navbar .navbar-nav .nav-item .btn-group a {
 nav.navbar .navbar-nav .nav-item .btn-group a:hover {
     color: var(--bs-nav-link-hover-color);
 }
-.text-card p{
-    font-size: 13px;
+.text-card{
+    text-align: justify;
 }

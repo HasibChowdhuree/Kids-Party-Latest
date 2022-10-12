@@ -172,39 +172,43 @@
 
     <div class="page-title-background d-flex justify-content-center align-items-center"
         style="background: url('img/topbanner.png');">
-        <div class="page-title"><br> Packages</div>
+        <h1 class="page-title"><br> Packages</h1>
     </div>
     <div class="container main-body">
         <div class="row">
-            <div class="col" id="row-1">
+            <div class="col-lg-3 col-sm-12" id="row-1">
                 <div class="card">
-                    <form action="#">
-                        <div class="catagory_title text-center">Catagories</div>
-                        <div class="catagory_list">
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
-                                    value="option1" onclick="party()">
-                                <label class="form-check-label" for="exampleRadios1" onclick="party()">
-                                    Party Packages
-                                </label>
-                            </div>
-                            <div class=" form-check">
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
-                                    value="option2" onclick="character()" checked>
-                                <label class="form-check-label" for="exampleRadios2" onclick="character()">
-                                    Character Packages
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3"
-                                    value="option3" onclick="corporate()">
-                                <label class="form-check-label" for="exampleRadios3" onclick="corporate()">
-                                    Corporate packages
-                                </label>
-                            </div>
-                        </div><br><br>
-                        <div class="catagory_title text-center">Packages</div>
-                        <div class="catagory_list" id="catg_list">
+                    <div class="catagory_title text-center">Catagories</div>
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link bg-white" id="pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                aria-selected="true">Party Packages</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active bg-white" id="pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                                aria-selected="false">Character Packages</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link bg-white" id="pills-contact-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                                aria-selected="false">Corporate packages</button>
+                        </li>
+                    </ul>
+                    <div class="catagory_title text-center">Packages</div>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                            <ul>
+                                <li><a href="/face_painting.html">Face Painting & Temporary Tattoo</a></li>
+                                <li><a href="/balloon_sculpting.html">Balloon Sculpting</a></li>
+                                <li><a href="/henna_tattoo.html">Hanna Tattoo</a></li>
+                                <li><a href="/mascot_package.html">Mascot Package</a></li>
+                                <li><a href="/jumping_castle.html">Jumping Castle</a></li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade show active" id="pills-profile" role="tabpanel"
+                            aria-labelledby="pills-profile-tab">
                             <ul>
                                 <li><a href="/fairy_package.html">Fairy Package</a></li>
                                 <li><a href="/princess_package.html">Princess Package</a></li>
@@ -217,56 +221,32 @@
                                 <li><a href="/magician_package.html">Magician Package</a></li>
                             </ul>
                         </div>
-                        <script>
-                            function party() {
-                                document.getElementById('catg_list').innerHTML = `<ul>
-                                <li><a href="/face_painting.html">Face Painting & Temporary Tattoo</a></li>
-                                <li><a href="/balloon_sculpting.html">Balloon Sculpting</a></li>
-                                <li><a href="/henna_tattoo.html">Hanna Tattoo</a></li>
-                                <li><a href="/mascot_package.html">Mascot Package</a></li>
-                                <li><a href="/jumping_castle.html">Jumping Castle</a></li>
-                                </ul>`;
-                            }
-                            function character() {
-                                document.getElementById('catg_list').innerHTML = `<ul>
-                                <li><a href="/fairy_package.html">Fairy Package</a></li>
-                                <li><a href="/princess_package.html">Princess Package</a></li>
-                                <li><a href="/pirate_package.html">Pirate Package</a></li>
-                                <li><a href="/elsa_or_enna.html">Elsa or Anna</a></li>
-                                <li><a href="/elsa_and_enna.html">Elsa and Anna</a></li>
-                                <li><a href="/elsa_enna_olaf.html">Elsa, Anna and Olaf</a></li>
-                                <li><a href="/clown_package.html">Clown Package</a></li>
-                                <li><a href="/superhero_package.html">Superhero Package</a></li>
-                                <li><a href="/magician_package.html">Magician Package</a></li>
-                                </ul>`;
-                            }
-                            function corporate() {
-                                document.getElementById('catg_list').innerHTML = `<ul>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                            aria-labelledby="pills-contact-tab">
+                            <ul>
                                 <li><a href="/sports_events.html">Sports Events</a></li>
                                 <li><a href="/xmas_events.html">Xmas Events</a></li>
-                                </ul>`;
-                            }
-                        </script>
-                    </form>
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             <div class="col-md-9" id="row-2">
                 <div class="card">
-                    <div class="text-card">
-                        <h1 class="text-center">Pirate Package</h1>
-                    </div><br>
+                    <h2 class="text-center text-card">Pirate Package</h2>
+                    <br>
                     <div class="row">
                         <div class="col-md-8" id="row-1">
-                            <div class="text-card">
-                                <p>
-                                    Kids will have fun to Play games with a pirate. <br>
-                                    Receive their own pirate sword <br>
-                                    Do treasure Hunt Games <br>
-                                    Do sword fighting Games with pirate <br><br>
-                                    Kids can also enjoy some Pirate Magic And lots of Indoor and Outdoor Games (max kids
-                                    limit, after hour, travel fees may be applicable)
-                                </p>
-                            </div><br>
+                            <p class="text-card">
+
+                                Kids will have fun to Play games with a pirate. <br>
+                                Receive their own pirate sword <br>
+                                Do treasure Hunt Games <br>
+                                Do sword fighting Games with pirate <br><br>
+                                Kids can also enjoy some Pirate Magic And lots of Indoor and Outdoor Games (max kids
+                                limit, after hour, travel fees may be applicable)
+                            </p><br>
                             <div class="text-card">
                                 <img src="img/phone.png" style="height: 15px;" alt="">&nbsp;&nbsp;<span
                                     style="color:#DD3333;">
@@ -275,9 +255,9 @@
                                 reservation
                             </div>
                             <br>
-                            <div class="text-card">
+                            <p class="text-card">
                                 NB: After hour fees, Maximum kid limit and Travel fees may be applicable
-                            </div>
+                            </p>
                         </div>
                         <div class="col-md-4" id="row-2">
                             <div class="img-card">
@@ -289,8 +269,9 @@
                                         <img src="img/red-arrow.png" alt="">
                                     </div>
                                     <div class="col" style="text-align: right;">
-                                        <p style="text-align: right; font-size: 18px;">1 hours for</p>
-                                        <p style="color: #DD3333; text-align: right; font-size: 24px;"> $260</p>
+                                        <h3 style="text-align: right; font-size: 18px;">1 hour for
+                                            <br><span style="color: red; font-size:25px"> $260</span>
+                                        </h3>
                                     </div>
                                 </div>
                             </div>
@@ -301,7 +282,7 @@
         </div>
         <br>
         <hr><br><br>
-        <div class="page-title">
+        <div class="page-title-black">
             Related Packages
         </div>
         <div class="row">
