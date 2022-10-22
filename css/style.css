@@ -257,7 +257,10 @@ a{
 .footer-mid{
     text-align: center;
 }
-@media (max-width: 768px) {
+.footer-image img{
+    width: 120px;
+}
+@media (max-width: 821px) {
     #row-1 {
         order: 3;
     }
