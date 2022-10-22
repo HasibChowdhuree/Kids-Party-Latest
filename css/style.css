@@ -273,6 +273,21 @@ a{
 .footer-image img{
     width: 120px;
 }
+.about-back-box{
+    background-color: rgba(0, 255, 255, 0.363); 
+    border-radius: 10%;
+    padding: 20px;
+    padding-bottom: 10px;
+}
+.about-front-box{
+    background-color: rgba(23, 23, 65, 0.705); 
+    border-radius: 10%; 
+    text-align: center;  
+    color: white; 
+    font-size: 25px;
+    min-height: 180px; 
+    padding-top: 50px;
+}
 @media (max-width:1400px) {
     #card-left-img{
         position:absolute;
